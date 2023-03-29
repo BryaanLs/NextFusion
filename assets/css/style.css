@@ -216,6 +216,47 @@ span {
 }
 
 
+@media (max-width: 800px) {
+    .bg-hero {
+        background: url(/assets/img/bg-hero-tablet.svg);
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width: 400px) {
+    .bg-hero {
+        background: url(/assets/img/bg-hero-mobile.svg);
+    }
+
+    .hero {
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .hero-grid-content {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .button {
+        padding: 2rem 1rem;
+    }
+
+    .hero h2 {
+        font-size: 2.6rem;
+    }
+
+    .hero p {
+        font-size: 1.5rem;
+    }
+}
+
 
 ::-webkit-scrollbar {
     background-color: var(--cor-p);
@@ -231,4 +272,14 @@ span {
 ::-webkit-scrollbar-button {
     background-color: var(--roxo-p);
     border-radius: 20rem;
+}
+
+::selection {
+    background-color: var(--branco-fonte);
+    color: var(--roxo-p);
+}
+
+::-moz-selection {
+    background-color: var(--branco-fonte);
+    color: var(--roxo-p);
 }
