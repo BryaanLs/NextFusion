@@ -16,6 +16,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 h1,
@@ -55,6 +56,29 @@ span {
     font-size: inherit;
 }
 
+@keyframes tremer {
+    0% {
+        transform: rotate(0);
+    }
+
+    25% {
+        transform: rotate(2deg);
+    }
+
+    50% {
+        transform: rotate(0);
+    }
+
+    75% {
+        transform: rotate(-2deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+
 .container {
     padding: 3rem;
     height: max-content;
@@ -72,6 +96,19 @@ span {
     background-repeat: no-repeat;
     color: var(--branco-fonte);
     min-height: 100vh;
+    background-attachment: fixed;
+}
+
+.bg-atractive {
+    background: url(/assets/img/quadriculado.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+
+}
+
+.bg-white {
+    background: var(--branco-p);
 }
 
 .logo-title {
@@ -81,7 +118,7 @@ span {
     top: -30px;
 }
 
-.novo-cliente {
+.fundo-roxo {
     padding: 1rem 2rem;
     background-color: #21172C;
     color: var(--branco-fonte);
@@ -143,34 +180,55 @@ span {
     animation-iteration-count: 4;
 }
 
+.atractive {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
 
-/* .button:hover {
-    box-shadow: 10px 10px 12px rgba(222, 50, 244, 0.15),
-        0px 0px 86px #5E2898,
-        15px 15px 7px #FFFEFE,
-        40px 40px 9px rgba(94, 40, 152, 0.28);
-    animation: tremer .1s;
-    animation-iteration-count: 4;
-} */
+.atractive .fundo-roxo {
+    font-size: 1.6rem;
+    font-weight: normal;
+    margin-bottom: 2rem;
+}
 
-@keyframes tremer {
-    0% {
-        transform: rotate(0);
-    }
+.atractive p {
+    color: var(--branco-fonte);
+    font-size: 3rem;
+    font-weight: 300;
+}
 
-    25% {
-        transform: rotate(2deg);
-    }
+.barHeart {
+    position: relative;
+}
 
-    50% {
-        transform: rotate(0);
-    }
+.barHeart img {
+    filter: drop-shadow(0 0 5px var(--rosa-p));
+}
 
-    75% {
-        transform: rotate(-2deg);
-    }
+.barHeart::after {
+    content: url(/assets/img/barrinha-rosa.svg);
+    position: absolute;
+    bottom: -35px;
+    left: -15px;
+    filter: drop-shadow(0 0 2px var(--rosa-p));
+}
 
-    100% {
-        transform: rotate(0);
-    }
+
+
+::-webkit-scrollbar {
+    background-color: var(--cor-p);
+    width: .5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--rosa-p);
+    width: 20px;
+    border-radius: 20rem;
+}
+
+::-webkit-scrollbar-button {
+    background-color: var(--roxo-p);
+    border-radius: 20rem;
 }
