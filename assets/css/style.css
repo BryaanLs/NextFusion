@@ -97,6 +97,8 @@ span {
     color: var(--branco-fonte);
     min-height: 100vh;
     background-attachment: fixed;
+    -moz-background-attachment: fixed;
+
 }
 
 .bg-atractive {
