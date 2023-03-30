@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,11 +51,11 @@
 
     <section class="container bg-atractive">
         <div class="main-content atractive">
-            <h2 class="fundo-roxo">Atinja novos olhares</h2>
-            <p>Ter um site moderno <span class="span-roxo">fortalece</span> <b>sua marca,<br> <span
+            <h2 class="fundo-roxo" data-anime="left">Atinja novos olhares</h2>
+            <p data-anime="bottom">Ter um site moderno <span class="span-roxo">fortalece</span> <b>sua marca,<br> <span
                         class="span-roxo">valoriza</span> seu produto e
                     <span class="barHeart">encanta <img src="assets/img/favorite.svg" width="25" height="25"
-                            alt="coração rosa sem fundo e sem preenchimento"></span></b> seu
+                            alt="coração rosa sem fundo e sem preenchimento" loading="lazy"></span></b> seu
                 cliente</p>
 
         </div>
@@ -63,25 +63,28 @@
 
     <section class="container bg-company">
         <div class="main-content company">
-            <h2 class="fundo-roxo">Posicione sua empresa</h2>
+            <h2 class="fundo-roxo" data-anime="left">Posicione sua empresa</h2>
 
             <div class="cards-company">
-                <div class="card-company">
-                    <img src="/assets/img/load.svg" width="50" alt="">
+                <div class="card-company" data-anime="left">
+                    <img src="/assets/img/load.svg" width="50" height="50"
+                        alt="Icone de duas setas simbolizando um retorno" loading="lazy">
                     <h3>Viabiliza a<br> venda física</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus officiis provident quisquam, ipsam
                         nobis incidunt adipisci minima tempore. Laboriosam, eum vel perspiciatis tempore ipsum ex
                         voluptates iure sunt officiis amet!</p>
                 </div>
-                <div class="card-company">
-                    <img src="/assets/img/diversity.svg" width="50" alt="">
+                <div class="card-company" data-anime="top">
+                    <img src="/assets/img/diversity.svg" width="50" height="50" alt="Icone de diversidade"
+                        loading="lazy">
                     <h3>Facilita a<br> vida do cliente</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus officiis provident quisquam, ipsam
                         nobis incidunt adipisci minima tempore. Laboriosam, eum vel perspiciatis tempore ipsum ex
                         voluptates iure sunt officiis amet!</p>
                 </div>
-                <div class="card-company">
-                    <img src="/assets/img/follow.svg" width="50" alt="">
+                <div class="card-company" data-anime="right">
+                    <img src="/assets/img/follow.svg" width="50" height="50"
+                        alt="Icone de uma pessoa seguindo uma placa" loading="lazy">
                     <h3>Atrai clientes<br> em potencial</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus officiis provident quisquam, ipsam
                         nobis incidunt adipisci minima tempore. Laboriosam, eum vel perspiciatis tempore ipsum ex
@@ -91,10 +94,18 @@
         </div>
     </section>
 
+    <div class="container bg-atractive">
+        <div class="main-content atractive vitrine">
+            <p data-anime="bottom">Seu site <b>pode ir além.</b><br>
+                Ele <span class="span-roxo">não serve apenas para venda.</span><br>
+                <span class="barHeart">Serve como vitrine</span>.
+            </p>
 
-
+        </div>
+    </div>
 
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
 </body>
 
 </html>

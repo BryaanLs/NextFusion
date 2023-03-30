@@ -18,6 +18,7 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 h1,
@@ -44,6 +45,7 @@ body {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    overflow-x: hidden;
 }
 
 p,
@@ -225,6 +227,11 @@ span {
     margin-bottom: 2rem;
 }
 
+.atractive.vitrine p {
+    text-align: center;
+    line-height: 1.5;
+}
+
 .atractive p {
     color: var(--branco-fonte);
     font-size: 3rem;
@@ -282,6 +289,35 @@ span {
 .card-company h3,
 .card-company p {
     margin: 2rem 0;
+}
+
+[data-anime] {
+    opacity: 0;
+    transition: .5s ease-in-out;
+    filter: blur(2rem);
+}
+
+[data-anime="top"] {
+    transform: translate3d(0, -50px, 0);
+}
+
+[data-anime="bottom"] {
+    transform: translate3d(0, 50px, 0);
+}
+
+[data-anime="left"] {
+    transform: translate3d(-50px, 0, 0);
+}
+
+[data-anime="right"] {
+    transform: translate3d(50px, 0, 0);
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+
+    filter: blur(0);
 }
 
 
