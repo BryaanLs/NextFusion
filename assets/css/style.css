@@ -1,9 +1,10 @@
 :root {
     --cor-p: #1E1E1E;
-    --roxo-p: #5E2898;
+    --roxo-p: #986CC7;
     --rosa-p: #DE32F4;
     --branco-p: #D9D9D9;
     --branco-fonte: #fff;
+    --cinza-fonte: #757575;
     --gap: 2rem;
 }
 
@@ -39,7 +40,10 @@ h3 {
 }
 
 body {
-    background: var(--cor-p);
+    background: url(/assets/img/wallpaper-body.svg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 p,
@@ -78,6 +82,22 @@ span {
     }
 }
 
+@keyframes blurHero {
+    0% {
+        opacity: 0;
+        filter: blur(2rem)
+    }
+
+    100% {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+.blurHero {
+    animation: blurHero .5s linear both;
+}
+
 
 .container {
     padding: 3rem;
@@ -96,14 +116,11 @@ span {
     background-repeat: no-repeat;
     color: var(--branco-fonte);
     min-height: 100vh;
-    background-attachment: fixed;
-    -moz-background-attachment: fixed;
-
 }
 
 .bg-atractive {
-    background: url(/assets/img/quadriculado.svg);
-    background-size: contain;
+    background: url(/assets/img/quadriculado-com-raio-colorido.svg);
+    background-size: 28%;
     background-repeat: no-repeat;
     background-position: right;
 
@@ -111,6 +128,14 @@ span {
 
 .bg-white {
     background: var(--branco-p);
+}
+
+.bg-company {
+    background: url(/assets/img/quadriculado.svg);
+    background-position: left;
+    background-size: 50%;
+    background-position: top left;
+    background-repeat: no-repeat;
 }
 
 .logo-title {
@@ -121,13 +146,16 @@ span {
 }
 
 .fundo-roxo {
-    padding: 1rem 2rem;
+    padding: .5rem 2rem;
     background-color: #21172C;
     color: var(--branco-fonte);
     width: max-content;
     text-transform: uppercase;
     margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 500;
 }
+
 
 .logo-title h1 {
     color: var(--roxo-p);
@@ -187,6 +215,7 @@ span {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin: 8rem auto;
 }
 
 .atractive .fundo-roxo {
@@ -217,6 +246,48 @@ span {
     filter: drop-shadow(0 0 2px var(--rosa-p));
 }
 
+.cards-company {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+    margin-top: 3rem;
+}
+
+.card-company {
+    background: #272727;
+    box-shadow: 20px 15px 30px rgba(0, 0, 0, 0.15);
+    padding: 3rem 2rem;
+    text-align: center;
+    color: var(--branco-fonte);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.card-company h3 {
+    font-weight: 500;
+}
+
+.card-company p {
+    text-align: justify;
+    font-weight: 400;
+    word-break: break-all;
+    color: var(--cinza-fonte);
+}
+
+.card-company img,
+.card-company h3,
+.card-company p {
+    margin: 2rem 0;
+}
+
+
+
+
+
+
 
 @media (max-width: 800px) {
     .bg-hero {
@@ -224,6 +295,10 @@ span {
     }
 
     .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .cards-company {
         grid-template-columns: 1fr;
     }
 }
