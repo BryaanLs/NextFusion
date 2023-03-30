@@ -112,7 +112,7 @@ span {
 .bg-hero {
     background: url(/assets/img/bg-hero.svg);
     background-position: center center;
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
     color: var(--branco-fonte);
     min-height: 100vh;
@@ -184,6 +184,7 @@ span {
 .span-pink {
     color: var(--rosa-p);
 }
+
 
 .hero-grid-content p {
     margin-top: 3rem;
@@ -298,8 +299,18 @@ span {
         grid-template-columns: 1fr;
     }
 
+    .button {
+        font-size: 1.5rem;
+        min-width: 100%;
+    }
+
     .cards-company {
         grid-template-columns: 1fr;
+    }
+
+    .atractive p {
+        font-size: 2.5rem;
+        width: 100%;
     }
 }
 
