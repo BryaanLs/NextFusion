@@ -375,9 +375,13 @@ span {
         grid-template-columns: 1fr;
     }
 
+    .logo-title {
+        justify-content: center;
+    }
+
     .hero {
-        justify-items: left;
-        justify-content: left;
+        justify-items: center;
+        justify-content: center;
     }
 
     .button {
@@ -394,13 +398,14 @@ span {
         text-align: center;
     }
 
-    .atractive p {
-        font-size: 2.3rem;
+    .atractive p,
+    .atractive.vitrine p {
+        font-size: 2.;
         width: 100%;
     }
 
     .atractive.vitrine p {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 
     .vantagens-content {
@@ -453,6 +458,17 @@ span {
     .button {
         font-size: 1.3rem;
         text-align: center;
+    }
+
+    .atractive p,
+    .atractive.vitrine p {
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    .barHeart::after {
+        opacity: 0;
+
     }
 }
 
