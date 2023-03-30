@@ -6,6 +6,7 @@
     --branco-p: #D9D9D9;
     --branco-fonte: #fff;
     --cinza-fonte: #757575;
+    --rosa-h3: #BA68C8;
     --gap: 2rem;
 }
 
@@ -156,13 +157,13 @@ span {
 }
 
 .fundo-roxo {
-    padding: .5rem 2rem;
+    padding: .5rem 6rem;
     background-color: #21172C;
     color: var(--branco-fonte);
     width: max-content;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     margin-bottom: 1rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 500;
 }
 
@@ -365,6 +366,47 @@ span {
     filter: blur(0);
 }
 
+.our-services .card-company {
+    position: relative;
+    background: rgba(39, 39, 39, 0.4);
+}
+
+.our-services .button {
+    padding: 1rem 2rem;
+
+}
+
+.our-services h3 {
+    color: var(--rosa-h3);
+}
+
+.our-services ul {
+    list-style-type: none;
+    text-align: left;
+}
+
+.our-services li {
+    position: relative;
+    padding-left: 3rem;
+    margin: 2rem 0;
+}
+
+.our-services li::after {
+    content: url(/assets/img/check.svg);
+    position: absolute;
+    left: 0;
+}
+
+.our-services .card-company::after {
+    content: url(/assets/img/barrinha-colorida.svg);
+    position: absolute;
+    top: 110px;
+    left: 0;
+}
+
+
+
+
 @media (max-width: 800px) {
     .bg-hero {
         background: url(/assets/img/bg-hero-tablet.svg);
@@ -471,7 +513,6 @@ span {
 
     }
 }
-
 
 ::-webkit-scrollbar {
     background-color: var(--cor-p);
