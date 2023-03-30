@@ -102,7 +102,6 @@ span {
     animation: blurHero .5s linear both;
 }
 
-
 .container {
     padding: 3rem;
     height: max-content;
@@ -134,12 +133,19 @@ span {
     background: var(--branco-p);
 }
 
-.bg-company {
+.bg-company,
+.bg-quad {
     background: url(/assets/img/quadriculado.svg);
     background-position: left;
-    background-size: 50%;
+    background-size: 50% 80%;
     background-position: top left;
     background-repeat: no-repeat;
+}
+
+.bg-quad {
+    background-position: right;
+    background-size: 35%;
+
 }
 
 .logo-title {
@@ -159,7 +165,6 @@ span {
     font-size: 2rem;
     font-weight: 500;
 }
-
 
 .logo-title h1 {
     color: var(--roxo-p);
@@ -188,7 +193,6 @@ span {
 .span-pink {
     color: var(--rosa-p);
 }
-
 
 .hero-grid-content p {
     margin-top: 3rem;
@@ -293,6 +297,45 @@ span {
     margin: 2rem 0;
 }
 
+.card-vantagens {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--branco-fonte);
+}
+
+.vantagens-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+.vantagens-content h3 {
+    font-weight: 300;
+}
+
+.vantagens-content p {
+    color: var(--cinza-fonte);
+}
+
+.vantagens-content {
+    position: relative;
+    padding-left: 5rem;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.vantagens-content::after {
+    content: url(/assets/img/check_box.svg);
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
 [data-anime] {
     opacity: 0;
     transition: .5s ease-in-out;
@@ -322,19 +365,19 @@ span {
     filter: blur(0);
 }
 
-
-
-
-
-
-
 @media (max-width: 800px) {
     .bg-hero {
         background: url(/assets/img/bg-hero-tablet.svg);
     }
 
-    .hero {
+    .hero,
+    .vantagens-grid {
         grid-template-columns: 1fr;
+    }
+
+    .hero {
+        justify-items: left;
+        justify-content: left;
     }
 
     .button {
@@ -352,19 +395,39 @@ span {
     }
 
     .atractive p {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
         width: 100%;
     }
+
+    .atractive.vitrine p {
+        font-size: 1.8rem;
+    }
+
+    .vantagens-content {
+        padding: 0;
+        margin: 4rem 0;
+    }
+
+    .vantagens-content {
+        width: 80%;
+    }
+
+    .vantagens-content::after {
+        content: url(/assets/img/check_box.svg);
+        position: absolute;
+        left: -2px;
+        top: -40px;
+    }
+
+    .vantagens .fundo-roxo {
+        margin-bottom: 6rem;
+    }
+
 }
 
 @media(max-width: 400px) {
     .bg-hero {
         background: url(/assets/img/bg-hero-mobile.svg);
-    }
-
-    .hero {
-        justify-content: center;
-        justify-items: center;
     }
 
     .hero-grid-content {
@@ -385,6 +448,11 @@ span {
 
     .hero p {
         font-size: 1.5rem;
+    }
+
+    .button {
+        font-size: 1.3rem;
+        text-align: center;
     }
 }
 
