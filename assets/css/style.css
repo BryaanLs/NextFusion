@@ -371,6 +371,10 @@ span {
     background: rgba(39, 39, 39, 0.4);
 }
 
+.our-services .button:hover {
+    box-shadow: none;
+}
+
 .our-services .button {
     padding: 1rem 2rem;
 
