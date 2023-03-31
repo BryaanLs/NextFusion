@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600&family=Poppins:wght@100;400;600&display=swap');
+
 :root {
     --cor-p: #1E1E1E;
     --roxo-p: #986CC7;
@@ -491,6 +493,8 @@ span {
     position: relative;
     margin: 1rem 0;
     color: var(--branco-fonte);
+    display: flex;
+    flex-wrap: wrap;
 
 }
 
@@ -507,14 +511,20 @@ span {
 }
 
 
-.sanfona-card button {
+#seeMore {
     position: absolute;
     right: 20px;
-    background: none;
+    background: transparent;
     border: none;
+    transition: rotate .3s ease-in-out;
     cursor: pointer;
-    top: 25%;
-    transition: all .3s ease-in-out;
+
+
+}
+
+#seeMore::after {
+    content: url(/assets/img/arrow-sanfona.svg);
+
 }
 
 .sanfona-content {
