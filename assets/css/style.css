@@ -99,6 +99,17 @@ span {
     }
 }
 
+@keyframes flutuate {
+    0% {
+        transform: translate3d(0, -20px, 0);
+
+    }
+
+    100% {
+        transform: translate3d(0, 20px, 0);
+    }
+}
+
 .blurHero {
     animation: blurHero .5s linear both;
 }
@@ -371,7 +382,8 @@ span {
     background: rgba(39, 39, 39, 0.4);
 }
 
-.our-services .button:hover {
+.our-services .button:hover,
+.our-projects .button:hover {
     box-shadow: none;
 }
 
@@ -408,7 +420,35 @@ span {
     left: 0;
 }
 
+.our-projects .card-company {
+    justify-content: center;
+    transform: skew(20deg) scale(60%);
+    border-radius: 1rem;
+    box-shadow: -40px 50px 20px rgba(0, 0, 0, 0.25);
+    transition: all .5s ease-in-out;
+}
 
+
+.flutuate {
+    animation: flutuate 3s linear infinite alternate;
+    box-shadow: 0 0 5px #000;
+    height: 0%;
+}
+
+.our-projects .card-company:hover {
+    transform: skew(0) scale(100%);
+    animation: none;
+    box-shadow: 0 0 20px var(--cor-p);
+}
+
+.flutuate:hover {
+    animation: none;
+    transform: skew(0) scale(100%);
+}
+
+.our-projects h3 {
+    margin: 0;
+}
 
 
 @media (max-width: 800px) {
