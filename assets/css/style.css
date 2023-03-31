@@ -245,6 +245,8 @@ span {
     color: var(--branco-fonte);
     font-size: 3rem;
     font-weight: 300;
+    min-width: 80%;
+    max-width: 80%;
 }
 
 .barHeart {
@@ -401,6 +403,7 @@ span {
 .our-projects .button {
     padding: 1rem 2rem;
     margin: 0;
+    min-width: auto;
 }
 
 .faq {
@@ -616,6 +619,8 @@ span {
         left: 30%;
     }
 
+
+
 }
 
 @media(max-width: 400px) {
@@ -650,7 +655,7 @@ span {
 
     .atractive p,
     .atractive.vitrine p {
-        /* font-size: 2rem; */
+        min-width: 100%;
         text-align: center;
     }
 
