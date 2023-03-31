@@ -1,3 +1,8 @@
+const titleSanfona = document.querySelectorAll('.titleSeeMore');
+const seeMore = document.querySelectorAll('.seeMore');
+const sanfonaContent = document.querySelectorAll('.sanfona-content');
+const sanfona = document.querySelectorAll('.sanfona-card');
+
 function animateScroll() {
     const dataAnime = document.querySelectorAll('[data-anime]');
     const windowTop = window.innerHeight * 0.5;
@@ -10,15 +15,6 @@ function animateScroll() {
         }
     })
 }
-
-window.addEventListener('scroll', () => {
-    animateScroll()
-})
-
-const titleSanfona = document.querySelectorAll('.titleSeeMore');
-const seeMore = document.querySelectorAll('.seeMore');
-const sanfonaContent = document.querySelectorAll('.sanfona-content');
-const sanfona = document.querySelectorAll('.sanfona-card');
 
 function percorre(array) {
     array.forEach((el, index) => {
@@ -42,3 +38,7 @@ function toggleSanfona(el, index) {
 
 percorre(titleSanfona)
 percorre(seeMore)
+
+window.addEventListener('scroll', () => {
+    animateScroll()
+})

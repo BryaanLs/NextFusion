@@ -551,7 +551,7 @@ span {
     }
 
     .logo-title {
-        justify-content: center;
+        justify-content: start;
     }
 
     .hero {
@@ -619,8 +619,17 @@ span {
         left: 30%;
     }
 
+    .sanfona-card h3 {
+        width: 90%;
+        hyphens: auto;
+        font-size: 1.5rem;
+    }
 
-
+    .sanfona-content p {
+        width: 100%;
+        text-align: justify;
+        hyphens: auto;
+    }
 }
 
 @media(max-width: 400px) {
@@ -629,7 +638,7 @@ span {
     }
 
     .hero-grid-content {
-        width: 80%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
