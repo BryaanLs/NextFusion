@@ -1,19 +1,19 @@
-function animateScroll() {
-    const dataAnime = document.querySelectorAll('[data-anime]');
-    const windowTop = window.innerHeight * 0.5;
+// function animateScroll() {
+//     const dataAnime = document.querySelectorAll('[data-anime]');
+//     const windowTop = window.innerHeight * 0.5;
 
-    dataAnime.forEach((e) => {
-        if (e.getBoundingClientRect().top - windowTop < 120) {
-            e.classList.add('animate')
-        } else {
-            e.classList.remove('animate')
-        }
-    })
-}
+//     dataAnime.forEach((e) => {
+//         if (e.getBoundingClientRect().top - windowTop < 120) {
+//             e.classList.add('animate')
+//         } else {
+//             e.classList.remove('animate')
+//         }
+//     })
+// }
 
-window.addEventListener('scroll', () => {
-    animateScroll()
-})
+// window.addEventListener('scroll', () => {
+//     animateScroll()
+// })
 
 
 const seeMore = document.querySelectorAll('.seeMore');
