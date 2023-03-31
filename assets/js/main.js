@@ -21,22 +21,9 @@ const sanfonaContent = document.querySelectorAll('.sanfona-content');
 const sanfona = document.querySelectorAll('.sanfona-card');
 
 seeMore.forEach((btn, index) => {
-    let count = 0;
     btn.addEventListener('click', () => {
-        if (count % 2 === 0) {
-            sanfonaContent[index].classList.add('active');
-            btn.classList.add('rotateBtn');
-            sanfona[index].classList.add('active2');
-        } else {
-            sanfonaContent[index].classList.remove('active');
-            btn.classList.remove('rotateBtn');
-            sanfona[index].classList.remove('active2');
-        }
-
-
-        // sanfonaContent[index].classList.toggle('active');
-        // btn.classList.toggle('rotateBtn');
-        // sanfona[index].classList.toggle('active2');
-        count += 1;
+        sanfonaContent[index].classList.toggle('active');
+        btn.classList.toggle('rotateBtn');
+        sanfona[index].classList.toggle('active2');
     })
 })
