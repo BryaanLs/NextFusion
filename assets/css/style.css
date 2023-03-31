@@ -320,7 +320,6 @@ span {
     color: var(--branco-fonte);
 }
 
-
 .vantagens-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -393,7 +392,6 @@ span {
 
 .our-services .button {
     padding: 1rem 2rem;
-
 }
 
 .our-services h3 {
@@ -444,6 +442,7 @@ span {
 }
 
 .flutuate:hover {
+    transition: all .5s ease-in-out;
     animation: none;
     transform: skew(0) scale(100%);
 }
@@ -467,10 +466,10 @@ span {
 
     content: 'faq';
     position: absolute;
-    font-size: 20rem;
+    font-size: 10rem;
     font-weight: bold;
-    top: -150px;
-    left: -30px;
+    top: -50px;
+    left: 15%;
     text-transform: uppercase;
     background: linear-gradient(180deg, #66359B -19.76%, rgba(152, 108, 199, 0.13) 69.54%);
     -webkit-background-clip: text;
@@ -510,13 +509,13 @@ span {
     width: 90%;
 }
 
-
 .seeMore {
     position: absolute;
     right: 20px;
     background: transparent;
     border: none;
     transition: rotate .3s ease-in-out;
+    -webkit-transition: rotate .3s ease-in-out;
     cursor: pointer;
 
 
@@ -534,15 +533,18 @@ span {
 
 .active {
     display: block;
+    -webkit-display: block;
 }
 
 .active2 {
     transition: all 500ms ease-in-out;
+    -webkit-transition: all 500ms ease-in-out;
     background-color: var(--sanfona);
 }
 
 .rotateBtn {
     rotate: 90deg;
+    -webkit-rotate: 90deg;
 }
 
 
