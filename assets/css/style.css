@@ -516,7 +516,7 @@ span {
     -webkit-rotate: 90deg;
 }
 
-/* [data-anime] {
+[data-anime] {
     opacity: 0;
     transition: .5s ease-in-out;
     filter: blur(2rem);
@@ -543,7 +543,7 @@ span {
     transform: translate3d(0, 0, 0);
 
     filter: blur(0);
-} */
+}
 
 
 
