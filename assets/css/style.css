@@ -102,7 +102,7 @@ span {
     }
 }
 
-@keyframes flutuate {
+/* @keyframes flutuate {
     0% {
         transform: translate3d(0, -20px, 0);
 
@@ -111,11 +111,11 @@ span {
     100% {
         transform: translate3d(0, 20px, 0);
     }
-}
+} */
 
-.blurHero {
+/* .blurHero {
     animation: blurHero .5s linear both;
-}
+} */
 
 .container {
     padding: 3rem;
@@ -160,7 +160,6 @@ span {
 .bg-quad {
     background-position: right;
     background-size: 35%;
-
 }
 
 .logo-title {
