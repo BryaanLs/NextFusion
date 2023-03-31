@@ -55,6 +55,137 @@ body {
     overflow-x: hidden;
 }
 
+/* Ellipse 41 */
+
+.ball1 {
+    position: absolute;
+    width: 423px;
+    height: 431px;
+    left: 94px;
+    top: 905px;
+
+    background: #66359B;
+    filter: blur(300px);
+}
+
+/* Ellipse 43 */
+
+.ball2 {
+    position: absolute;
+    width: 423px;
+    height: 431px;
+    left: 1391px;
+    top: 1072px;
+
+    background: #66359B;
+    filter: blur(300px);
+}
+
+/* Ellipse 42 */
+
+.ball3 {
+    position: absolute;
+    width: 423px;
+    height: 431px;
+    left: 1569px;
+    top: 1988px;
+
+    background: #66359B;
+    filter: blur(300px);
+}
+
+/* Ellipse 43 */
+
+.ball4 {
+    position: absolute;
+    width: 423px;
+    height: 431px;
+    left: -129px;
+    top: 2724px;
+
+    background: #66359B;
+    filter: blur(300px);
+}
+
+/* Ellipse 44 */
+
+.ball5 {
+    position: absolute;
+    width: 321px;
+    height: 327px;
+    left: 1660px;
+    top: 2936px;
+
+    background: #DE32F4;
+    filter: blur(300px);
+}
+
+/* Ellipse 46 */
+
+.ball6 {
+    position: absolute;
+    width: 321px;
+    height: 327px;
+    left: -153px;
+    top: 2188px;
+
+    background: #DE32F4;
+    filter: blur(300px);
+}
+
+/* Ellipse 45 */
+
+.ball7 {
+    position: absolute;
+    width: 358px;
+    height: 365px;
+    left: 781px;
+    top: 1174px;
+
+    background: rgba(222, 50, 244, 0.6);
+    filter: blur(300px);
+}
+
+/* Ellipse 56 */
+
+.ball8 {
+    position: absolute;
+    width: 423px;
+    height: 431px;
+    left: 1539px;
+    top: 4132px;
+
+    background: #66359B;
+    filter: blur(300px);
+}
+
+/* Ellipse 57 */
+
+.ball9 {
+    position: absolute;
+    width: 423px;
+    height: 431px;
+    left: -49px;
+    top: 4788px;
+
+    background: #66359B;
+    filter: blur(300px);
+}
+
+/* Ellipse 58 */
+
+.ball10 {
+    position: absolute;
+    width: 321px;
+    height: 327px;
+    left: 1429px;
+    top: 4920px;
+
+    background: #DE32F4;
+    filter: blur(300px);
+}
+
+
 p,
 a,
 li,
@@ -401,7 +532,6 @@ span {
     transition: all .5s ease-in-out;
 } */
 
-
 .our-projects .card-company:hover {
     box-shadow: 0 0 20px var(--cor-p);
 }
@@ -545,8 +675,6 @@ span {
 
     filter: blur(0);
 }
-
-
 
 @media (max-width: 800px) {
     .bg-hero {
