@@ -610,8 +610,8 @@ span {
         margin-bottom: 6rem;
     }
 
-    .our-projects .card-company {
-        transform: skew(20deg) scale(80%);
+    .vantagens .button {
+        text-align: center;
     }
 
     .card-vantagens img {
