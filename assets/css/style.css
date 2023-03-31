@@ -421,32 +421,32 @@ span {
     left: 0;
 }
 
-.our-projects .card-company {
+/* .our-projects .card-company {
     justify-content: center;
     transform: skew(20deg) scale(70%);
     border-radius: 1rem;
     box-shadow: -40px 50px 20px rgba(0, 0, 0, 0.25);
     transition: all .5s ease-in-out;
-}
+} */
 
-.flutuate {
-    animation: flutuate 3s linear infinite alternate;
-    box-shadow: 0 0 5px #000;
-    height: 0%;
-}
 
 .our-projects .card-company:hover {
-    transform: skew(0) scale(100%);
     box-shadow: 0 0 20px var(--cor-p);
 }
 
 .flutuate:hover {
     transition: all .5s ease-in-out;
     animation: none;
-    transform: skew(0) scale(100%);
 }
 
 .our-projects h3 {
+    margin: 2rem 0;
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+.our-projects .button {
+    padding: 1rem 2rem;
     margin: 0;
 }
 
@@ -491,7 +491,6 @@ span {
     color: var(--branco-fonte);
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .sanfona-card h3 {
@@ -524,7 +523,6 @@ span {
 }
 
 .sanfona-content {
-    transition: all .3s ease-in-out;
     display: none;
 }
 
@@ -534,9 +532,12 @@ span {
 }
 
 .active2 {
-    transition: all 500ms ease-in-out;
-    -webkit-transition: all 500ms ease-in-out;
+    transition: all 200ms;
+    -webkit-transition: all 200ms;
     background: var(--sanfona);
+    border-color: var(--roxo-escuro);
+    box-shadow: 0 0 10px var(--roxo-escuro);
+
 }
 
 .rotateBtn {
