@@ -47,144 +47,9 @@ h3 {
 }
 
 body {
-    /* background: url(/assets/img/wallpaper-body.svg); */
-    /* background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    */
+    background: url(/assets/img/wallpaper-body.svg);
     overflow-x: hidden;
 }
-
-/* Ellipse 41 */
-
-.ball1 {
-    position: absolute;
-    width: 423px;
-    height: 431px;
-    left: 94px;
-    top: 905px;
-
-    background: #66359B;
-    filter: blur(300px);
-}
-
-/* Ellipse 43 */
-
-.ball2 {
-    position: absolute;
-    width: 423px;
-    height: 431px;
-    left: 1391px;
-    top: 1072px;
-
-    background: #66359B;
-    filter: blur(300px);
-}
-
-/* Ellipse 42 */
-
-.ball3 {
-    position: absolute;
-    width: 423px;
-    height: 431px;
-    left: 1569px;
-    top: 1988px;
-
-    background: #66359B;
-    filter: blur(300px);
-}
-
-/* Ellipse 43 */
-
-.ball4 {
-    position: absolute;
-    width: 423px;
-    height: 431px;
-    left: -129px;
-    top: 2724px;
-
-    background: #66359B;
-    filter: blur(300px);
-}
-
-/* Ellipse 44 */
-
-.ball5 {
-    position: absolute;
-    width: 321px;
-    height: 327px;
-    left: 1660px;
-    top: 2936px;
-
-    background: #DE32F4;
-    filter: blur(300px);
-}
-
-/* Ellipse 46 */
-
-.ball6 {
-    position: absolute;
-    width: 321px;
-    height: 327px;
-    left: -153px;
-    top: 2188px;
-
-    background: #DE32F4;
-    filter: blur(300px);
-}
-
-/* Ellipse 45 */
-
-.ball7 {
-    position: absolute;
-    width: 358px;
-    height: 365px;
-    left: 781px;
-    top: 1174px;
-
-    background: rgba(222, 50, 244, 0.6);
-    filter: blur(300px);
-}
-
-/* Ellipse 56 */
-
-.ball8 {
-    position: absolute;
-    width: 423px;
-    height: 431px;
-    left: 1539px;
-    top: 4132px;
-
-    background: #66359B;
-    filter: blur(300px);
-}
-
-/* Ellipse 57 */
-
-.ball9 {
-    position: absolute;
-    width: 423px;
-    height: 431px;
-    left: -49px;
-    top: 4788px;
-
-    background: #66359B;
-    filter: blur(300px);
-}
-
-/* Ellipse 58 */
-
-.ball10 {
-    position: absolute;
-    width: 321px;
-    height: 327px;
-    left: 1429px;
-    top: 4920px;
-
-    background: #DE32F4;
-    filter: blur(300px);
-}
-
 
 p,
 a,
@@ -225,29 +90,21 @@ span {
 @keyframes blurHero {
     0% {
         opacity: 0;
-        filter: blur(2rem)
+        filter: blur(2rem);
+        transform: translate3d(-50px, 0, 0);
     }
 
     100% {
         opacity: 1;
         filter: blur(0);
+        transform: translate3d(0, 0, 0);
     }
 }
 
-/* @keyframes flutuate {
-    0% {
-        transform: translate3d(0, -20px, 0);
 
-    }
-
-    100% {
-        transform: translate3d(0, 20px, 0);
-    }
-} */
-
-/* .blurHero {
+.blurHero {
     animation: blurHero .5s linear both;
-} */
+}
 
 .container {
     padding: 3rem;
@@ -306,7 +163,6 @@ span {
     background-color: #21172C;
     color: var(--branco-fonte);
     width: max-content;
-    /* text-transform: uppercase; */
     margin-bottom: 1rem;
     font-size: 1.8rem;
     font-weight: 500;
@@ -522,23 +378,6 @@ span {
     position: absolute;
     top: 110px;
     left: 0;
-}
-
-/* .our-projects .card-company {
-    justify-content: center;
-    transform: skew(20deg) scale(70%);
-    border-radius: 1rem;
-    box-shadow: -40px 50px 20px rgba(0, 0, 0, 0.25);
-    transition: all .5s ease-in-out;
-} */
-
-.our-projects .card-company:hover {
-    box-shadow: 0 0 20px var(--cor-p);
-}
-
-.flutuate:hover {
-    transition: all .5s ease-in-out;
-    animation: none;
 }
 
 .our-projects h3 {
@@ -765,18 +604,6 @@ span {
         left: 30%;
     }
 
-    .ball1,
-    .ball2,
-    .ball3,
-    .ball4,
-    .ball5,
-    .ball6,
-    .ball7,
-    .ball8,
-    .ball9,
-    .ball10 {
-        display: none;
-    }
 }
 
 @media(max-width: 400px) {
