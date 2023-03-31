@@ -511,7 +511,7 @@ span {
 }
 
 
-#seeMore {
+.seeMore {
     position: absolute;
     right: 20px;
     background: transparent;
@@ -522,7 +522,7 @@ span {
 
 }
 
-#seeMore::after {
+.seeMore::after {
     content: url(/assets/img/arrow-sanfona.svg);
 
 }

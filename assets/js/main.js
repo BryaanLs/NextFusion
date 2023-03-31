@@ -16,7 +16,7 @@ window.addEventListener('scroll', () => {
 })
 
 
-const seeMore = document.querySelectorAll('#seeMore');
+const seeMore = document.querySelectorAll('.seeMore');
 const sanfonaContent = document.querySelectorAll('.sanfona-content');
 const sanfona = document.querySelectorAll('.sanfona-card');
 
