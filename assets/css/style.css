@@ -227,6 +227,7 @@ span {
     flex-direction: column;
     align-items: center;
     margin: 8rem auto;
+    text-align: center;
 }
 
 .atractive .fundo-roxo {
@@ -255,11 +256,16 @@ span {
 }
 
 .barHeart::after {
-    content: url(/assets/img/barrinha-rosa.svg);
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px dashed var(--rosa-p);
     position: absolute;
-    bottom: -35px;
-    left: -15px;
+    bottom: -10px;
+    border-bottom-right-radius: 2.5rem;
+    left: 0;
     filter: drop-shadow(0 0 2px var(--rosa-p));
+
 }
 
 .cards-company {
@@ -289,7 +295,8 @@ span {
 .card-company p {
     text-align: justify;
     font-weight: 400;
-    word-break: break-all;
+    hyphens: auto;
+    text-align-last: center;
     color: var(--cinza-fonte);
 }
 
@@ -384,6 +391,11 @@ span {
     margin: 2rem 0;
     margin-top: 2rem;
     font-size: 2rem;
+}
+
+.our-projects img {
+    width: 100%;
+    height: auto;
 }
 
 .our-projects .button {
@@ -558,16 +570,6 @@ span {
         text-align: center;
     }
 
-    .atractive p,
-    .atractive.vitrine p {
-        font-size: 2.;
-        width: 100%;
-    }
-
-    .atractive.vitrine p {
-        font-size: 2rem;
-    }
-
     .vantagens-content {
         padding: 0;
         margin: 4rem 0;
@@ -648,8 +650,8 @@ span {
 
     .atractive p,
     .atractive.vitrine p {
-        font-size: 2rem;
-        text-align: left;
+        /* font-size: 2rem; */
+        text-align: center;
     }
 
     .barHeart::after {
