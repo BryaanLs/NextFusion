@@ -22,13 +22,8 @@ const sanfona = document.querySelectorAll('.sanfona-card');
 
 seeMore.forEach((btn, index) => {
     btn.addEventListener('click', () => {
-        sanfonaContent.forEach((content, indexSanfona) => {
-            if (index == indexSanfona) {
-                content.classList.toggle('active');
-                btn.classList.toggle('rotateBtn');
-                sanfona[index].classList.toggle('active2')
-
-            }
-        })
+        sanfonaContent[index].classList.toggle('active');
+        btn.classList.toggle('rotateBtn');
+        sanfona[index].classList.toggle('active2')
     })
 })
