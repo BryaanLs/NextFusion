@@ -14,3 +14,21 @@ function animateScroll() {
 window.addEventListener('scroll', () => {
     animateScroll()
 })
+
+
+const seeMore = document.querySelectorAll('#seeMore');
+const sanfonaContent = document.querySelectorAll('.sanfona-content');
+const sanfona = document.querySelectorAll('.sanfona-card');
+
+seeMore.forEach((btn, index) => {
+    btn.addEventListener('click', () => {
+        sanfonaContent.forEach((content, indexSanfona) => {
+            if (index == indexSanfona) {
+                content.classList.toggle('active');
+                btn.classList.toggle('rotateBtn');
+                sanfona[index].classList.toggle('active2')
+
+            }
+        })
+    })
+})

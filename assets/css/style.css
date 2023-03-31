@@ -7,6 +7,7 @@
     --branco-fonte: #fff;
     --cinza-fonte: #757575;
     --rosa-h3: #BA68C8;
+    --sanfona: rgba(102, 53, 155, 0.4);
     --gap: 2rem;
 }
 
@@ -317,6 +318,7 @@ span {
     color: var(--branco-fonte);
 }
 
+
 .vantagens-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -422,12 +424,11 @@ span {
 
 .our-projects .card-company {
     justify-content: center;
-    transform: skew(20deg) scale(60%);
+    transform: skew(20deg) scale(70%);
     border-radius: 1rem;
     box-shadow: -40px 50px 20px rgba(0, 0, 0, 0.25);
     transition: all .5s ease-in-out;
 }
-
 
 .flutuate {
     animation: flutuate 3s linear infinite alternate;
@@ -437,7 +438,6 @@ span {
 
 .our-projects .card-company:hover {
     transform: skew(0) scale(100%);
-    animation: none;
     box-shadow: 0 0 20px var(--cor-p);
 }
 
@@ -449,6 +449,92 @@ span {
 .our-projects h3 {
     margin: 0;
 }
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq .fundo-roxo {
+    position: relative;
+}
+
+.faq .fundo-roxo::before {
+
+    content: 'faq';
+    position: absolute;
+    font-size: 20rem;
+    font-weight: bold;
+    top: -150px;
+    left: -30px;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #66359B -19.76%, rgba(152, 108, 199, 0.13) 69.54%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+}
+
+.sanfona {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6rem;
+    width: 100%;
+}
+
+
+.sanfona-card {
+    border: 2px solid var(--roxo-p);
+    padding: 2rem 3rem;
+    position: relative;
+    margin: 1rem 0;
+    color: var(--branco-fonte);
+
+}
+
+.sanfona-card h3 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.sanfona-card p {
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin: 1rem 0;
+    width: 90%;
+}
+
+
+.sanfona-card button {
+    position: absolute;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    top: 25%;
+    transition: all .3s ease-in-out;
+}
+
+.sanfona-content {
+    transition: all .3s ease-in-out;
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.active2 {
+    transition: all 500ms ease-in-out;
+    background-color: var(--sanfona);
+}
+
+.rotateBtn {
+    rotate: 90deg;
+}
+
 
 
 @media (max-width: 800px) {
@@ -500,7 +586,7 @@ span {
     }
 
     .vantagens-content {
-        width: 80%;
+        width: 100%;
     }
 
     .vantagens-content::after {
@@ -514,6 +600,31 @@ span {
         margin-bottom: 6rem;
     }
 
+    .our-projects .card-company {
+        transform: skew(20deg) scale(80%);
+    }
+
+    .card-vantagens img {
+        width: 90%;
+    }
+
+    .fundo-roxo {
+        padding: 0.5rem 4rem;
+    }
+
+    .our-projects .cards-company {
+        grid-template-columns: 100%;
+    }
+
+    .our-projects img {
+        width: 90%;
+    }
+
+    .faq .fundo-roxo::before {
+        font-size: 5rem;
+        top: 10px;
+        left: 30%;
+    }
 }
 
 @media(max-width: 400px) {
