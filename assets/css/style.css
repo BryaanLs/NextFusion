@@ -47,7 +47,7 @@ h3 {
 }
 
 body {
-    /* background: url(/assets/img/wallpaper-body.svg); */
+    background: linear-gradient(180deg, rgba(94, 40, 152, 0.16) 0%, rgba(186, 104, 200, 0.09) 32.51%, rgba(94, 23, 235, 0.08) 95.1%);
     overflow-x: hidden;
 }
 
@@ -454,6 +454,7 @@ span {
 .sanfona-card h3 {
     font-size: 2rem;
     font-weight: 400;
+    cursor: pointer;
 }
 
 .sanfona-card p {
