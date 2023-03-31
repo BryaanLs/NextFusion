@@ -47,7 +47,7 @@ h3 {
 }
 
 body {
-    background: url(/assets/img/wallpaper-body.svg);
+    /* background: url(/assets/img/wallpaper-body.svg); */
     overflow-x: hidden;
 }
 
@@ -432,6 +432,8 @@ span {
     color: var(--branco-fonte);
     display: flex;
     flex-wrap: wrap;
+    height: auto;
+    transition: background-color 500ms, box-shadow 1s;
 }
 
 .sanfona-card h3 {
@@ -442,8 +444,36 @@ span {
 .sanfona-card p {
     font-size: 1.5rem;
     font-weight: 200;
-    margin: 1rem 0;
     width: 90%;
+}
+
+.sanfona-content {
+    transition: margin 1s;
+    opacity: 0;
+    margin: 1rem;
+}
+
+.sanfona-content p {
+    display: none;
+    max-height: 0;
+    transition: display 10s;
+}
+
+.active p {
+    display: block;
+    max-height: max-content;
+}
+
+.active {
+    position: relative;
+    margin-top: 6rem;
+    opacity: 1;
+}
+
+.active2 {
+    background: var(--sanfona);
+    border-color: var(--roxo-escuro);
+    box-shadow: 0 0 10px var(--roxo-escuro);
 }
 
 .seeMore {
@@ -454,30 +484,10 @@ span {
     transition: rotate .3s ease-in-out;
     -webkit-transition: rotate .3s ease-in-out;
     cursor: pointer;
-
-
 }
 
 .seeMore::after {
     content: url(/assets/img/arrow-sanfona.svg);
-
-}
-
-.sanfona-content {
-    display: none;
-}
-
-.active {
-    display: block;
-    -webkit-display: block;
-}
-
-.active2 {
-    transition: all 200ms;
-    -webkit-transition: all 200ms;
-    background: var(--sanfona);
-    border-color: var(--roxo-escuro);
-    box-shadow: 0 0 10px var(--roxo-escuro);
 
 }
 
