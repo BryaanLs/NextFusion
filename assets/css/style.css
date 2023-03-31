@@ -463,7 +463,6 @@ span {
 }
 
 .faq .fundo-roxo::before {
-
     content: 'faq';
     position: absolute;
     font-size: 10rem;
@@ -484,7 +483,6 @@ span {
     margin-top: 6rem;
     width: 100%;
 }
-
 
 .sanfona-card {
     border: 2px solid var(--roxo-p);

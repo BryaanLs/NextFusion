@@ -24,6 +24,6 @@ seeMore.forEach((btn, index) => {
     btn.addEventListener('click', () => {
         sanfonaContent[index].classList.toggle('active');
         btn.classList.toggle('rotateBtn');
-        sanfona[index].classList.toggle('active2')
+        sanfona[index].classList.toggle('active2');
     })
 })
