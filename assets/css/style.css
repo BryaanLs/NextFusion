@@ -479,6 +479,7 @@ span {
 .active p {
     display: block;
     max-height: max-content;
+    color: var(--branco-p);
 }
 
 .active {
@@ -562,10 +563,9 @@ span {
 }
 
 .last-call .button:hover {
-    animation: none;
+
     box-shadow: 0 0 10px var(--roxo-escuro),
         inset 10px -30px 100px #481d75;
-    transform: scale(90%);
 
 }
 
@@ -573,6 +573,17 @@ span {
     transition: all .5s ease-in-out;
     text-align: center;
     min-width: 100%;
+    animation: scaleBop 1s infinite alternate;
+}
+
+@keyframes scaleBop {
+    0% {
+        transform: scale(100%);
+    }
+
+    100% {
+        transform: scale(105%);
+    }
 }
 
 footer {
