@@ -646,8 +646,6 @@ footer.container {
     filter: grayscale(1);
 }
 
-
-
 [data-anime] {
     opacity: 0;
     transition: .5s ease-in-out;
