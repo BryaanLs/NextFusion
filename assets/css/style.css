@@ -654,7 +654,8 @@ footer.container {
 
 .rodape li img:hover {
     transition: filter 500ms;
-    filter: grayscale(1);
+    filter: saturate(0);
+
 }
 
 [data-anime] {
