@@ -714,6 +714,7 @@ footer.container {
 @media (max-width: 800px) {
     .bg-hero {
         background: url(/assets/img/bg-hero-tablet.svg);
+        background-size: cover;
     }
 
     .hero,
@@ -811,6 +812,9 @@ footer.container {
 @media(max-width: 400px) {
     .bg-hero {
         background: url(/assets/img/bg-hero-mobile.svg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     .hero-grid-content {
@@ -841,12 +845,49 @@ footer.container {
     .atractive p,
     .atractive.vitrine p {
         min-width: 100%;
+        font-size: 2.5rem;
         text-align: center;
     }
 
     .barHeart::after {
         opacity: 0;
 
+    }
+}
+
+@media (max-width: 330px) {
+    .bg-hero {
+        background: none;
+    }
+
+    .fundo-roxo {
+        width: 100%;
+        padding: 1rem 0;
+        text-align: center;
+    }
+
+    .our-services h3 {
+        font-size: 2.4rem;
+    }
+
+    .our-services ul {
+        margin: 2rem 0;
+    }
+
+    .atractive p {
+        font-size: 2.5rem;
+    }
+
+    .vantagens-content h3 {
+        font-size: 2rem;
+        width: 100%;
+        margin-bottom: 1rem;
+
+    }
+
+    .vantagens-content p {
+        text-align: justify;
+        hyphens: auto;
     }
 }
 
