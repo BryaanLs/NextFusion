@@ -103,6 +103,16 @@ span {
     }
 }
 
+@keyframes scaleBop {
+    0% {
+        transform: scale(100%);
+    }
+
+    100% {
+        transform: scale(105%);
+    }
+}
+
 .blurHero {
     animation: blurHero .5s linear both;
 }
@@ -563,9 +573,9 @@ span {
 }
 
 .last-call .button:hover {
-
     box-shadow: 0 0 10px var(--roxo-escuro),
         inset 10px -30px 100px #481d75;
+
 
 }
 
@@ -576,15 +586,7 @@ span {
     animation: scaleBop 1s infinite alternate;
 }
 
-@keyframes scaleBop {
-    0% {
-        transform: scale(100%);
-    }
 
-    100% {
-        transform: scale(105%);
-    }
-}
 
 footer {
     margin-top: 30rem;
@@ -629,6 +631,12 @@ footer.container {
     color: var(--branco-fonte);
     font-weight: 100;
     padding: 1rem 2rem;
+    transition: .5s ease-in-out;
+}
+
+.last-button:hover {
+    box-shadow: 0 0 20px var(--verde-btn), -10px 15px 10px #000;
+    transform: scale(102%) translate3d(6px, -6px, 0);
 }
 
 .slogan p {
@@ -714,7 +722,6 @@ footer.container {
 @media (max-width: 800px) {
     .bg-hero {
         background: url(/assets/img/bg-hero-tablet.svg);
-        background-size: cover;
     }
 
     .hero,
