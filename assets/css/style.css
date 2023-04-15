@@ -134,6 +134,7 @@ span {
     background-repeat: no-repeat;
     color: var(--branco-fonte);
     min-height: 100vh;
+    display: flex;
 }
 
 .bg-atractive {
@@ -141,7 +142,6 @@ span {
     background-size: 28%;
     background-repeat: no-repeat;
     background-position: right;
-
 }
 
 .bg-white {
@@ -190,11 +190,13 @@ span {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: end;
+    align-items: center;
 }
 
 .hero h2 {
     font-weight: 100;
     line-height: 1;
+
 }
 
 .span-roxo {
@@ -586,8 +588,6 @@ span {
     animation: scaleBop 1s infinite alternate;
 }
 
-
-
 footer {
     margin-top: 30rem;
     border-top: 1px solid var(--roxo-escuro);
@@ -695,6 +695,33 @@ footer.container {
     filter: blur(0);
 }
 
+@media (min-width: 1600px) {
+    .logo-title h1 {
+        font-size: 4rem;
+    }
+
+    .hero h2 {
+        font-size: 5rem;
+
+    }
+
+    .hero-grid-content p {
+        font-size: 2rem;
+    }
+
+    .atractive p {
+        font-size: 3.5rem;
+    }
+
+    .fundo-roxo {
+        font-size: 2rem;
+    }
+
+    .card-company p {
+        font-size: 1.8rem;
+    }
+}
+
 @media (max-width:1200px) {
     .last-call-grid {
         grid-template-columns: 1fr;
@@ -740,7 +767,6 @@ footer.container {
 
     .button {
         font-size: 1.5rem;
-        min-width: 100%;
     }
 
     .cards-company {
