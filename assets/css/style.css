@@ -118,6 +118,7 @@ span {
 }
 
 .container {
+    min-width: 100%;
     padding: 3rem;
     height: max-content;
 }
